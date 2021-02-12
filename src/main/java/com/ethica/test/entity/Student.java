@@ -12,25 +12,24 @@ import java.util.UUID;
 @Data
 public class Student {
 
-    @Id
-    @GeneratedValue
-    private Long id;
+  @Id
+  @GeneratedValue(strategy = GenerationType.IDENTITY)
+  private Long id;
 
-    @NotNull
-    private UUID uuid;
+  @NotNull private UUID uuid;
 
-    @NotEmpty
-    @Column(name = "first_name")
-    private String firstName;
+  @NotEmpty
+  @Column(name = "first_name")
+  private String firstName;
 
-    @NotEmpty
-    @Column(name = "last_name")
-    private String lastName;
+  @NotEmpty
+  @Column(name = "last_name")
+  private String lastName;
 
-    private Integer age;
+  private Integer age;
 
-    @PrePersist
-    private void createUuid() {
-        this.uuid = UUID.randomUUID();
-    }
+  @PrePersist
+  private void createUuid() {
+    this.uuid = UUID.randomUUID();
+  }
 }
