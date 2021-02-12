@@ -23,6 +23,7 @@ public class SecurityConfig extends WebSecurityConfigurerAdapter {
         .and()
         .httpBasic();
   }
+
   @Override
   public void configure(WebSecurity web) {
     web.ignoring().antMatchers("/v2/api-docs",

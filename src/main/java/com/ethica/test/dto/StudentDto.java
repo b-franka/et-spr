@@ -2,6 +2,7 @@ package com.ethica.test.dto;
 
 import lombok.Data;
 
+import javax.validation.constraints.NotNull;
 import java.util.UUID;
 
 @Data

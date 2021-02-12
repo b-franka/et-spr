@@ -18,11 +18,9 @@ public class Student {
 
   @NotNull private UUID uuid;
 
-  @NotEmpty
   @Column(name = "first_name")
   private String firstName;
 
-  @NotEmpty
   @Column(name = "last_name")
   private String lastName;
 

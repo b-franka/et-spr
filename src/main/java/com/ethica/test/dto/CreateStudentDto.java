@@ -8,8 +8,7 @@ import javax.validation.constraints.NotNull;
 @Data
 public class CreateStudentDto {
 
-  @NotNull @NotEmpty private String firstName;
-
-  @NotNull @NotEmpty private String lastName;
+  private String firstName;
+  private String lastName;
   private Integer age;
 }
